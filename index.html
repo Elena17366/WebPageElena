@@ -1,6 +1,22 @@
+<!--
+  Archivo principal HTML para el proyecto web de la asignatura WEB ATELIER (UDIT)
+  Estructura básica y funciones principales:
+  - Define la estructura semántica de la página (header, main, footer)
+  - Incluye enlaces a hojas de estilo y scripts
+  - Contiene secciones para bienvenida, objetivos y progreso semanal
+  
+  Posibles mejoras/extensiones:
+  - Añadir navegación principal para facilitar el acceso a diferentes secciones
+  - Incluir imágenes o multimedia para enriquecer el contenido
+  - Implementar un formulario de contacto accesible
+  - Mejorar la accesibilidad con roles ARIA y etiquetas adicionales
+  - Añadir soporte multilingüe (por ejemplo, enlaces a versiones en español/inglés)
+  - Integrar un sistema de comentarios o feedback
+-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Metadatos y enlace a la hoja de estilos principal -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My Web Project - WEB ATELIER (UDIT)</title>
@@ -8,16 +24,19 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
+		<!-- Enlace de salto para accesibilidad -->
 		<a href="#main" class="skip-link">Skip to main content</a>
 
 		<header>
 			<div class="container">
+				<!-- Título principal y subtítulo -->
 				<h1>My Web Project</h1>
 				<p>Student Project - WEB ATELIER (UDIT)</p>
 			</div>
 		</header>
 
 		<main id="main" class="container">
+			<!-- Sección de bienvenida y objetivos del proyecto -->
 			<section>
 				<h2>Welcome</h2>
 				<p>
@@ -34,6 +53,7 @@
 				</ul>
 			</section>
 
+			<!-- Sección para mostrar el progreso semanal -->
 			<section>
 				<h2>Weekly Progress</h2>
 				<p>
@@ -46,6 +66,7 @@
 
 		<footer>
 			<div class="container">
+				<!-- Información de copyright y enlaces útiles -->
 				<p>© 2025 [Your Name] — WEB ATELIER (UDIT) · Web Design (2025 Fall).</p>
 				<p>
 					<a href="https://github.com/ruvebal/web-atelier-udit">Course Framework</a>
@@ -55,6 +76,7 @@
 			</div>
 		</footer>
 
+		<!-- Inclusión del script principal de JavaScript -->
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
