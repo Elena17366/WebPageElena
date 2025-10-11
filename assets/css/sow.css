@@ -81,6 +81,8 @@ p {
     font-size: 0.9rem;
 }
 
+
+
 /* MENÚ */
 
 nav ul li a:hover,
@@ -124,18 +126,26 @@ nav ul li a {
     font-style: italic;
 }
 
+header {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 /* PORTADA ANIMADA */
 
 .cover {
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     color: black;
 }
 
 .title {
     font-family: poppins-medium;
+    text-align: center;
     line-height: 1;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -161,6 +171,10 @@ nav ul li a {
   .title {
     font-size: 3rem;
   }
+}
+
+.info {
+    text-align: center;
 }
 
 .info p:first-child {
@@ -288,4 +302,9 @@ footer p {
 
 .info-footer{
     margin-bottom: 20px;
+}
+
+.pie-pagina {
+    display: flex;
+    justify-content: end;
 }
