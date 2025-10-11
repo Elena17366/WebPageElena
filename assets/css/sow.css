@@ -195,7 +195,7 @@ h2 {
     font-size: 1.5rem;
 }
 
-#site a {
+.link {
     font-family: poppins-light;
     text-decoration: none;
     text-decoration: underline;
