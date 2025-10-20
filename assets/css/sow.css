@@ -244,14 +244,28 @@ h2 {
 
 .screenshots {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-bottom: 40px;
 }
 
 .screenshots img {
-    width: 100%;
+    width: calc(100% - 100px);
     height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+@media (max-width: 800px) {
+    .screenshots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .screenshots {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* IFRAME */
@@ -259,7 +273,9 @@ h2 {
 iframe {
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: calc(100% - 100px);
     height: 800px;
     border: none;
     overflow: hidden;
@@ -275,6 +291,31 @@ iframe {
     font-size: 2rem;
     font-style: normal;
     letter-spacing: 1px;
+}
+
+#site-cssda .screenshots {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+
+#site-cssda .screenshots img {
+    position: absolute;
+    width: calc(100% - 100px);
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#site-cssda .screenshots img.active {
+    opacity: 1;
 }
 
 #site-cssda h2 {
